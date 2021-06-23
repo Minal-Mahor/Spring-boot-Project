@@ -6,7 +6,7 @@ jdk:
 - oraclejdk8
 
 script:
-- ./mvnw clean install -B
+- ./mvnw clean 
 
 notifications:
   email: minal.mahor1997@gmail.com
