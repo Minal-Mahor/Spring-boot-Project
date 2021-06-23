@@ -1,6 +1,10 @@
 language: java
+sudo: true
+dist: trusty
 jdk:
  - openjdk8
 script: ./mvnw clean install
 notifications:
   email: minal.mahor1997@gmail.com
+before_install:
+  - chmod +x mvnw
