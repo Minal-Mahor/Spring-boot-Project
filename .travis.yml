@@ -1,23 +1,6 @@
-# language: java
-# sudo: true
-# dist: trusty
-
-# jdk:
-# - oraclejdk8
-
-
-# notifications:
-#   email: minal.mahor1997@gmail.com
-# before_install:
-#   - chmod +x mvnw
-  
 language: java
-sudo: true
-dist: trusty
-jdk: oraclejdk9
-addons:
-  apt:
-    packages:
-      - oracle-java9-installer
-before_install:
-  - chmod +x mvnw
+jdk:
+  - openjdk16
+script: ./mvnw clean install
+notifications:
+  email: minal.mahor1997@gmail.com
