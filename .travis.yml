@@ -1,6 +1,6 @@
 language: java
 jdk:
-  - openjdk8
+  - openjdk16
 script: ./mvnw clean install
 notifications:
   email: minal.mahor1997@gmail.com
